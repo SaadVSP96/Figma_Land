@@ -53,13 +53,17 @@ p {
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
+    padding: 3rem;
 }
 
 /* NavBar */
 .navbar {
-    width: auto;
+    width: 40%;
 }
 
 .navbar ul {
@@ -88,7 +92,9 @@ p {
 
 /* Social Icons */
 .social-icons-container {
+    width: 40%;
     display: flex;
+    justify-content: flex-end;
     gap: 2rem;
 }
 
