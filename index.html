@@ -25,12 +25,15 @@
         <section class="hero">
             <div class="header">
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#product">Product</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <svg class="icon icon--white nav__toggler">
+                        <use xlink:href="images/sprite.svg#menu"></use>
+                    </svg>
+                    <ul class="nav__list hidden">
+                        <li class="navitem"><a href="#home">Home</a></li>
+                        <li class="navitem"><a href="#product">Product</a></li>
+                        <li class="navitem"><a href="#pricing">Pricing</a></li>
+                        <li class="navitem"><a href="#about">About</a></li>
+                        <li class="navitem"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="logo-container">
@@ -47,5 +50,6 @@
                 </div>
             </div>
         </section>
+        <script src="js/main.js"></script>
     </body>
 </html>
