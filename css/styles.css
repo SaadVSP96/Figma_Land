@@ -36,6 +36,7 @@ h3 {
     margin-bottom: 3rem;
 }
 
+li,
 a,
 p {
     font-size: 2rem;
@@ -52,8 +53,20 @@ p {
     fill: var(--color-white);
 }
 
-/* @media screen and (max-width: 768px); */
-/* @media only screen and (max-device-width: 480px) */
+/* Lists */
+.list {
+    list-style: none;
+    /* getting rid of default padding applied to lists by browsers */
+    padding-left: 0;
+    color: var(--color-white);
+}
+
+.list--inline .list__item {
+    /* difference b/w inline and inline-block is that with this
+    we can apply margins */
+    display: inline-block;
+    margin-right: 2rem;
+}
 
 /* HERO */
 .hero {
@@ -73,11 +86,11 @@ p {
 
 /* NavBar */
 .navbar {
+    margin-top: 1rem;
     width: 40%;
 }
 
 .nav__list {
-    list-style: none;
     padding: 0;
     display: flex;
     gap: 2vw;
@@ -98,7 +111,7 @@ p {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .nav__toggler {
         display: block;
     }
@@ -135,4 +148,12 @@ p {
 
 .fa:hover {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .social-icons-container {
+        flex-direction: column;
+        align-items: end;
+        gap: 0;
+    }
 }
