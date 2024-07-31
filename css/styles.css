@@ -1,3 +1,6 @@
-body {
-    background-color: gold;
+:root {
+    --color-blue: #2091f9;
+    --color-white: #ffffff;
+    --color-purple: #252b42;
+    --color-black: #333333;
 }
