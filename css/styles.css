@@ -1,6 +1,36 @@
+html {
+    /* 62.5 % of 16px = 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
 :root {
     --color-blue: #2091f9;
     --color-white: #ffffff;
     --color-purple: #252b42;
     --color-black: #333333;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 0;
 }
