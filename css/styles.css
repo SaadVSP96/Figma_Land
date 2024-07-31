@@ -16,6 +16,7 @@ body {
 
 :root {
     --color-blue: #2091f9;
+    --color-darkblue: #04315b;
     --color-white: #ffffff;
     --color-purple: #252b42;
     --color-black: #333333;
@@ -37,7 +38,13 @@ h3 {
     margin-bottom: 3rem;
 }
 
-a,
+a {
+    font-size: 2rem;
+    margin-top: 0;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 p {
     font-size: 2rem;
     margin-top: 0;
@@ -72,6 +79,43 @@ p {
     transform: translate(-50%, -50%);
 }
 
+/* Buttons */
+.btn {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 5rem;
+    border-radius: 4rem;
+    border: 0;
+    text-align: center;
+    margin: 1rem 0;
+    /* to make button clickable and to avoid text wrapping in btn */
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    color: var(--color-white);
+    background: var(--color-blue);
+}
+
+.btn--primary:hover {
+    background: var(--color-darkblue);
+}
+
+.btn--secondary {
+    color: var(--color-blue);
+    background: var(--color-white);
+}
+
+.btn--secondary:hover {
+    background: grey;
+}
+
+.btn--block {
+    display: inline-block;
+    width: 25rem;
+}
+
 /* HERO */
 .hero {
     background-image: url(/images/Rectangle_9.png);
@@ -103,7 +147,6 @@ p {
 
 .navitem > a {
     color: var(--color-white);
-    text-decoration: none;
 }
 
 .navbar a:hover,
@@ -141,6 +184,7 @@ p {
 .social-icons-container {
     width: 40%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 2rem;
 }
