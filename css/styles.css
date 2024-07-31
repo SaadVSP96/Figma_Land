@@ -199,6 +199,18 @@ p {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 768px) {
+    .social-icons-container {
+        flex-direction: column;
+        align-items: end;
+        gap: 0;
+    }
+
+    .fa {
+        padding: 1rem;
+    }
+}
+
 /* Hero Content */
 .hero-content {
     text-align: center;
