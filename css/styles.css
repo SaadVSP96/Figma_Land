@@ -21,6 +21,7 @@ body {
     --color-purple: #252b42;
     --color-black: #333333;
     --color-lightgrey: rgb(245, 249, 249);
+    --color-grey: #ccc;
 }
 
 h1 {
@@ -108,7 +109,7 @@ p {
 }
 
 .btn--secondary:hover {
-    background: grey;
+    background: var(--color-grey);
 }
 
 .btn--block {
@@ -116,10 +117,10 @@ p {
     width: 25rem;
 }
 
-/* Inputs */
+/* Inputs / Input Groups*/
 .input {
-    padding: 1.5rem 3.5rem;
-    border: 1px solid #ccc;
+    padding: 2rem 3.5rem;
+    border: 1px solid var(--color-grey);
     border-radius: 30px;
     outline: 0;
     color: var(--color-black);
@@ -127,7 +128,23 @@ p {
 }
 
 ::placeholder {
-    color: #cdcbd7;
+    color: var(--color-grey);
+}
+
+.input-group {
+    border: 1px solid var(--color-grey);
+    border-radius: 30px;
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 2rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
 }
 
 /* HERO */
