@@ -116,6 +116,20 @@ p {
     width: 25rem;
 }
 
+/* Inputs */
+.input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: 0;
+    color: var(--color-black);
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
 /* HERO */
 .hero {
     background-image: url(/images/Rectangle_9.png);
