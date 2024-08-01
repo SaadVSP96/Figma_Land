@@ -52,6 +52,31 @@ p {
     margin-top: 0;
 }
 
+/* Lists */
+.list {
+    list-style: none;
+    /* getting rid of default padding applied to lists by browsers */
+    padding-left: 0;
+    color: var(--color-white);
+}
+
+.list--inline .list__item {
+    /* difference b/w inline and inline-block is that with this
+    we can apply margins */
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
 /* Icons */
 .icon {
     width: 30px;
