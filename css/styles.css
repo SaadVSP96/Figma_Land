@@ -22,6 +22,7 @@ body {
     --color-black: #333333;
     --color-lightgrey: rgb(245, 249, 249);
     --color-grey: #ccc;
+    --color-magenta: #a424b3;
 }
 
 h1 {
@@ -145,6 +146,33 @@ p {
 
 .input-group .btn {
     margin: 4px;
+}
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    /* to avoid sharp edges from appearing due to overflow */
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color-magenta);
+}
+.card--primary .card__body {
+    background: var(--color-white);
+}
+
+.card--secondary .card__header {
+    background: var(--color-blue);
+}
+.card--secondary .card__body {
+    background: var(--color-white);
 }
 
 /* HERO */
