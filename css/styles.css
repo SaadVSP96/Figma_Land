@@ -159,12 +159,14 @@ p {
 .card__header,
 .card__body {
     padding: 2rem 3rem;
+    color: var(--color-white);
 }
 
 .card--primary .card__header {
     background: var(--color-magenta);
 }
 .card--primary .card__body {
+    color: var(--color-black);
     background: var(--color-white);
 }
 
@@ -172,7 +174,33 @@ p {
     background: var(--color-blue);
 }
 .card--secondary .card__body {
+    color: var(--color-black);
     background: var(--color-white);
+}
+
+/* Plans */
+.plan__name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.plan__price {
+    font-size: 6rem;
+}
+
+.plan__billing-cycle {
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.plan__description {
+    /* to move the span down */
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /* HERO */
