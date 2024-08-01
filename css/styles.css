@@ -274,6 +274,51 @@ selector to point to this dynamic insertion. */
     right: 5%;
 }
 
+/* Quotes */
+.company-logo {
+    text-align: center;
+}
+
+.quote {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.quote__text::before {
+    content: open-quote;
+}
+
+.quote__text::after {
+    content: close-quote;
+}
+
+footer.quote__author {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    min-height: 20rem;
+    box-shadow: none;
+    padding: 0;
+}
+
+.quote__author-image-container {
+    width: 150px;
+    height: 150px;
+}
+
+.quote__author-image-container > img {
+    width: 100px;
+    height: 100px;
+}
+
+h3.quote__author-name {
+    margin: 0;
+}
+
+.quote__author-company {
+    opacity: 0.6;
+}
+
 /* HERO */
 .hero {
     background-image: url(/images/Rectangle_9.png);
@@ -412,6 +457,10 @@ selector to point to this dynamic insertion. */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 20px 10px var(--color-lightgrey);
+    border-radius: 7px;
+    padding: 3rem;
+    min-height: 35rem;
 }
 
 .media__title {
@@ -430,7 +479,7 @@ selector to point to this dynamic insertion. */
     .feature-components {
         display: flex;
         flex-direction: column;
-        max-width: 50%;
+        max-width: 70%;
         gap: 3rem;
     }
 
@@ -450,4 +499,43 @@ selector to point to this dynamic insertion. */
 .object .woman {
     width: 100%;
     height: auto;
+}
+
+/* TESTIMONIALS */
+.testimonials__heading {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.testimonials__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.testimonial-single {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 10px var(--color-lightgrey);
+    border-radius: 7px;
+    padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        justify-content: center;
+        gap: 3rem;
+    }
 }
