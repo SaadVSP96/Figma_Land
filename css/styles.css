@@ -23,6 +23,7 @@ body {
     --color-lightgrey: rgb(245, 249, 249);
     --color-grey: #ccc;
     --color-magenta: #a424b3;
+    --color-darkmagenta: #461a4a;
 }
 
 h1 {
@@ -138,6 +139,15 @@ p {
     background: var(--color-grey);
 }
 
+.btn--magenta {
+    color: var(--color-white);
+    background: var(--color-magenta);
+}
+
+.btn--magenta:hover {
+    background: var(--color-darkmagenta);
+}
+
 .btn--block {
     display: inline-block;
     width: 25rem;
@@ -204,6 +214,10 @@ p {
 }
 
 /* Plans */
+.plan {
+    width: 30%;
+}
+
 .plan__name {
     margin: 0;
     font-weight: 500;
@@ -226,6 +240,20 @@ p {
     width: 100%;
     font-size: 2rem;
     font-weight: 300;
+}
+
+.plan .card__body .plan__list {
+    color: var(--color-black);
+    font-size: 2rem;
+}
+
+.plan .card__body .plan__list .list__item {
+    padding-top: 1rem;
+}
+
+.plan .btn {
+    display: block;
+    margin: 1rem auto;
 }
 
 /* HERO */
