@@ -501,6 +501,40 @@ h3.quote__author-name {
     height: auto;
 }
 
+/* DEMONSTRATION */
+.demonsration {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin: 4rem 0 7rem 0;
+}
+
+.demo__content {
+    max-width: 50%;
+}
+
+.demo__heading {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.demo__desc {
+    text-align: left;
+}
+
+.demo__picture {
+    max-width: 50%;
+    height: auto;
+}
+
+.demo__picture > img {
+    width: 100%;
+}
+
 /* TESTIMONIALS */
 .testimonials__heading {
     margin-top: 4rem;
