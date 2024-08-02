@@ -171,16 +171,21 @@ p {
     border: 1px solid var(--color-grey);
     border-radius: 30px;
     display: flex;
+    max-width: 100%;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .input-group .input {
     border: 0;
     flex-grow: 1;
+    flex-shrink: 1; /* Allow input to shrink on smaller screens */
     padding: 2rem 1rem;
+    max-width: 100%; /* Prevents input from overflowing */
 }
 
 .input-group .btn {
     margin: 4px;
+    flex-shrink: 0; /* Prevent button from shrinking too much */
 }
 
 /* Cards */
@@ -528,11 +533,82 @@ h3.quote__author-name {
 
 .demo__picture {
     max-width: 50%;
-    height: auto;
 }
 
 .demo__picture > img {
+    height: auto;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .demonsration {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .demo__picture {
+        max-width: 70%;
+    }
+
+    .demo__content {
+        max-width: 70%;
+    }
+}
+
+/* NEWSLETTER */
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    margin: 4rem 0 7rem 0;
+}
+
+.newsletter__picture {
+    max-width: 50%;
+}
+
+.newsletter__picture > img {
+    height: auto;
+    width: 100%;
+}
+
+.newsletter__content {
+    max-width: 50%;
+}
+
+.news__heading {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.news__subheading {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .newsletter__picture {
+        max-width: 70%;
+    }
+
+    .newsletter__content {
+        max-width: 90%;
+    }
 }
 
 /* TESTIMONIALS */
