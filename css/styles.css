@@ -238,8 +238,8 @@ p {
 
 /* Cards */
 .card {
-    border-radius: 7px;
-    box-shadow: 0 0 20px 10px #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 3px #f3f3f3;
     /* to avoid sharp edges from appearing due to overflow */
     overflow: hidden;
 }
@@ -252,10 +252,12 @@ p {
 
 .card--primary .card__header {
     background: var(--color-magenta);
+    padding: 3rem 3rem;
 }
 .card--primary .card__body {
     color: var(--color-black);
     background: var(--color-white);
+    padding: 3rem 3rem;
 }
 
 .card--secondary .card__header {
@@ -737,4 +739,36 @@ h3.quote__author-name {
         justify-content: center;
         gap: 3rem;
     }
+}
+
+/* PRICING */
+.pricing {
+    background: var(--color-darkblue);
+    margin: 4rem 0 7rem 0;
+    padding: 4rem 0 6rem 0;
+}
+
+.pricing__heading {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.pricing__desc {
+    text-align: center;
+    line-height: 4rem;
+    color: var(--color-white);
+}
+
+.pricing__plan--container {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    gap: 4rem;
+    margin: 0 auto;
 }
