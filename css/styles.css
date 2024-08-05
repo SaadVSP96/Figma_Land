@@ -656,8 +656,28 @@ h3.quote__author-name {
         max-width: 70%;
     }
 
+    .news__heading {
+        text-align: center;
+    }
+
     .newsletter__content {
         max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter .input-group .input {
+        border: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 2rem 1rem;
+        /* max-width: 100%; */
+        width: 150px;
+    }
+
+    .newsletter .btn {
+        padding: 2rem;
     }
 }
 
@@ -773,7 +793,7 @@ h3.quote__author-name {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .pricing__plan--container {
         display: flex;
         flex-direction: column;
@@ -877,11 +897,31 @@ input.input.input--message {
         display: flex;
         flex-direction: column;
         width: 80%;
+        padding: 3rem;
         margin: 6rem auto;
     }
 
     .details .social-icons-container {
+        flex-direction: row;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail__item--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 4rem;
+    }
+
+    .detail__item {
+        max-width: 100%;
+        text-align: center;
+        overflow: visible;
+        overflow-wrap: break-word;
     }
 }
 
@@ -936,6 +976,10 @@ input.input.input--message {
     justify-content: start;
 }
 
+span.detail__item--desc {
+    padding-bottom: 1rem;
+}
+
 @media screen and (max-width: 1024px) {
     .foot-container {
         display: flex;
@@ -948,6 +992,14 @@ input.input.input--message {
     .footer-lists-container {
         width: 100%;
         justify-content: space-around;
+    }
+
+    h3.footer__list__heading {
+        font-size: 2.5rem;
+    }
+
+    .footer-lists-container .footer__list li {
+        font-size: 1.5rem;
     }
 
     .footer-media-container .social-icons-container {
